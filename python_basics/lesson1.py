@@ -1,32 +1,42 @@
-# This is a comment in Python
-# variables are used to store data values
-x = 5           # integer
-y = 3.14        # float
-name = "Alice"  # string
-# a letter is a list of characters in 
-# quotation marks 
-is_student = True  # boolean True or False
-# Print the values of the variables
-print(x)
-print(y)
-print(name)
-print(is_student)
-#place in sentence without f-strings
-print("My name is " + name + ", I am " + str(x) + " years old.")
-#the plus sign (+) is used to concatenate strings
-# str(x) converts the integer x to a string
-# type() function returns the type of a variable
-print(type(x))          # <class 'int'>
-print(type(y))          # <class 'float'>
-print(type(name))       # <class 'str'>
-print(type(is_student)) # <class 'bool'>
-# lets make a new set of variables to practice
-a = 10
-b = 2.5
-c = "Bob"
-d = False
-# Print the values of the new variables in a sentence
-# using concatenation
-print("My name is " + c + ", I have " + str(a) + " apples.")
-# using the f string method
-print(f"My name is {c}, I have {a} apples.")
+#comments in Python start with the '#' symbol.
+# The purpose of comments is to explain
+#  the code and make it more understandable for humans.
+# Comments are ignored by the Python interpreter.
+# they are notes for anyone reading the code. 
+
+# variables are used to store data values.
+name = "Bob"  # This is a string variable
+#string variables are used to store text data.
+# noted by the quotation marks around the text.
+age = 30        # This is an integer variable
+# Integer variables are used to store whole numbers.
+height = 5.5    # This is a float variable
+# Float variables are used to store decimal numbers.
+is_student = True  # This is a boolean variable
+# Boolean variables are used to store True or False values.
+# Now we will print the variables to the console.
+print("Name:", name)
+print("Age:", age)
+print("Height:", height)
+print("Is Student:", is_student)
+
+# when we make sentences in python
+# we can use the + symbol to join strings together.
+#concatenation is the process of joining strings using the + operator.
+print("Hello, my name is " + name + ". I am " + str(age) + " years old.")
+# Note: We use the str() function to convert the integer 'age' to a string
+# so that we can concatenate it with other strings.
+print("I am " + str(height) + " feet tall.")
+# this is the old or classic way of formatting strings in python.
+# There are newer methods like f-strings and the format() method.
+print(f"My name is {name}, I am {age} years old and {height} feet tall.")
+#challenge: create 5 more strings using f-strings
+date = "2024-06-15"
+weather = "sunny"
+mood = "happy"
+hobby = "painting"
+city = "New York"
+#print a sentence using all the variables above using f-strings
+
+
+print("we did it!")
